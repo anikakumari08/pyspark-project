@@ -1,0 +1,32 @@
+Scenario#1:
+A retail company receives daily updates for its product catalog, including
+new products, price changes, and discontinued items. Instead of
+overwriting the entire catalog or simply appending new records, they
+need to upsert the incoming data-updating existing products with the
+latest information and inserting new products-ensuring the catalog
+remains accurate and up-to-date in real-time.
+
+Scenario#2
+A retail company receives daily sales transaction files from multiple store
+locations in an Azure Data Lake folder. Instead of reprocessing all
+historical data every day, the data engineering team uses Spark
+Structured Streaming to incrementally load only the newly arrived files
+into a Delta table. This ensures timely updates to analytics dashboards
+while optimizing compute costs and processing time.
+
+Scenario#3:
+An e-commerce platform receives customer order details from its mobile
+application in JSON format through a streaming pipeline. The JSON contains
+nested fields such as customer information, payment details, and a list of
+purchased items. To store and analyze this data efficiently in a data
+warehouse, the nested structure must be flattened into a tabular format
+using PySpark, ensuring all relevant attributes are readily accessible A
+reporting and analytics.
+
+Scenario#5
+A retail company processes daily sales transactions from multiple store
+locations. The data arrives ie different formats and needs to be cleaned,
+validated, and aggregated for business reporting. Using a Delta Live Tables
+(DLT) pipeline, the raw data is ingested from cloud storage, transformed
+with quality checks, and stored in Delta tables for analytics dashboards,
+ensuring accuracy and reliability in near real-time.
